@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #222;
+}
+
+.container {
+  width: 70%;
+  max-width: 450px;
+  background: linear-gradient(120deg, #0d97d2, #cccbcd);
+  color: #fff;
+  margin: 50px auto;
+  border-radius: 50px;
+  padding: 40px 35px;
+  text-align: center;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search-bar input {
+  border: 0;
+  outline: 0;
+  background: #ebfffc;
+  color: #090909;
+  padding: 20px;
+  height: 50px;
+  border-radius: 30px;
+  flex: 1;
+  margin-right: 16px;
+  font-size: 18px;
+}
+
+.search-bar button {
+  border: 0;
+  outline: 0;
+  background: #ebfffc;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  margin: 5px;
+}
+.search-bar button img {
+  width: 16px;
+}
+
+.search-bar button .get-location {
+  width: 40px;
+}
+.weather-icon {
+  width: 170px;
+  margin-top: 30px;
+}
+
+.weather h1 {
+  font-size: 80px;
+  font-weight: 500;
+}
+
+.weather h2 {
+  font-size: 45px;
+  font-weight: 400;
+  margin-top: -10px;
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-top: 50px;
+}
+
+.col {
+  display: block;
+  align-items: center;
+  text-align: left;
+}
+
+.col img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.humidity,
+.wind {
+  font-size: 30px;
+  margin-top: -6px;
+}
+
+.weather {
+  display: none;
+}
+
+.error {
+  color: red;
+  display: none;
+  text-align: left;
+  margin-left: 10px;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .search-bar input {
+    margin-right: 10px;
+    padding: 10px;
+    width: 60%;
+  }
+
+  .search-bar button {
+    margin-left: 1px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .weather h1 {
+    font-size: 40px;
+    font-weight: 500;
+  }
+
+  .weather h2 {
+    font-size: 35px;
+    font-weight: 400;
+    margin-top: -10px;
+  }
+  .col p {
+    font-size: 15px;
+  }
+  .col img {
+    width: 30px;
+    margin-right: 40px;
+  }
+}
