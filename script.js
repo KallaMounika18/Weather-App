@@ -73,7 +73,6 @@ async function gotLocation(position) {
   console.log(result);
 }
 
-function gotLocation(position) {}
 function failedToGet() {
   console.log("There was some issue");
 }
