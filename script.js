@@ -77,6 +77,12 @@ function failedToGet() {
   console.log("There was some issue");
 }
 
-locationBtn.addEventListener("click", () => {
-  navigator.geolocation.getCurrentPosition(gotLocation, failedToGet);
-});
+// locationBtn.addEventListener("click", () => {
+//   navigator.geolocation.getCurrentPosition(gotLocation, failedToGet);
+// });
+window.onload = function () {
+  locationBtn.addEventListener("click", () => {
+    navigator.geolocation.getCurrentPosition(gotLocation, failedToGet);
+    //navigator.geolocation.getCurrentPosition(gotLocation, failedToGet);
+  });
+};
