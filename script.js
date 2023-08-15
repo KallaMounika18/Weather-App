@@ -5,7 +5,7 @@ const apiUrl2 = "https://api.openweathermap.org/data/2.5/onecall/timemachine?";
 const searchBox = document.querySelector(".search-bar input");
 const searchBtn = document.querySelector(".search-bar button");
 const weatherIcon = document.querySelector(".weather-icon");
-const locationBtn = document.getElementById("get-location");
+const locationBtn = document.getElementById(".get-location");
 
 async function checkWeather(city) {
   const response = await fetch(apiUrl1 + city + `&appid=${apiKey}`);
